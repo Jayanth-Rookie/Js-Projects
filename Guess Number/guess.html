@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 10%;
+        }
+        h1 {
+            font-size: 50px;
+        }
+        #attempts {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #guess {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        #message {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .lowOrHi {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the Number</h1>
+    <p>Try and guess a number between 1 and 100</p>
+    <div>
+        <input type="number" id="guess" placeholder="Enter the number" min="1" max="100">
+    </div>
+    <button type="button" id="subt">Submit Guess</button>
+    <p id="attempts">Attempts: 0</p>
+    <p class="lowOrHi"></p>
+    <p id="message"></p>
+    <button type="button" onclick="resetGame()">Reset Game</button>
+    <script src="guess.js"></script>
+</body>
+</html>
